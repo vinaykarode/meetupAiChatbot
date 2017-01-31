@@ -1,0 +1,31 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "setting_type" : "call_to_actions",
+  "thread_state" : "existing_thread",
+  "call_to_actions":[
+    {
+      "type":"postback",
+      "title":"Bloomberg",
+      "payload":"bloomberg"
+    },
+    {
+      "type":"postback",
+      "title":"Venture Beat",
+      "payload":"venturebeat"
+    },
+    {
+      "type":"postback",
+      "title":"Tech Crunch",
+      "payload":"techcrunch"
+    },
+    {
+      "type":"postback",
+      "title":"Science Daily",
+      "payload":"sciencedaily"
+    },
+    {
+      "type":"postback",
+      "title":"Telegraph",
+      "payload":"telegraph"
+    }
+  ]
+}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAOP0Dd1ZAGIBAPkijsX9TyTvw7TK8Orx46jTUZCrd2mexZBEepD5G6t47R7aJIZC1VNeH69ZBSrBdCWGMv0CoDCDnyomH8ETwBb6uyQpdZCAVoiHGwimZAvomVuDwMRao0WQTjZBJSeA62Q9d4z3cZCdvG7ZCT6hadWRZBz9KY2ocFdgZDZD"    
